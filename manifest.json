@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "TS Helper",
+    "version": "1.0.7",
+    "author": [{
+        "name": "Danila Sadyrin",
+        "email": "Danila.Sadirin@norbit.ru"
+    }],
+    "content_scripts": [
+        {
+            "matches": ["https://tfs.norbit.ru/TerrasoftCollection/CRM/_workitems/edit/*"],
+            "js": ["scriptEditPage.js"]
+        },
+        {
+            "matches": ["https://tfs.norbit.ru/TerrasoftCollection/CRM/_sprints/taskboard/*"],
+            "js": ["scriptTaskBoardPage.js"]
+        }
+    ]
+}
